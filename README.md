@@ -1,6 +1,6 @@
-# hs-collection-fe
+# HS-Collection-FE
 
-> hs-collection fe project
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Build Setup
 
@@ -18,4 +18,9 @@ npm run build
 npm run build --report
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+## 技术栈
+
+- Vue
+- Vue-Router
+- Webpack
+- Element-UI
