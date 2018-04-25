@@ -1,6 +1,6 @@
 <template>
   <div id="collection">
-    collection
+    <img src="../../static/images/cards/TheCavernsBelow.png" alt="探索地下洞穴">
   </div>
 </template>
 
