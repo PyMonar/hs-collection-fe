@@ -111,7 +111,7 @@ ul#menu li span.selected {
 }
 
 #content {
-  padding: 20px 100px 0 100px;
+  margin: 20px 120px 0 120px;
   min-height: 300px;
 }
 
