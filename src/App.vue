@@ -32,12 +32,12 @@ export default {
 #app {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #909399;
+  color: #b7bac0;
 }
 
 #header {
   font-size: 60px;
-  font-family: 'Geomanist';
+  font-family: 'Nowayround';
   font-weight: 600;
   line-height: 1.4;
 }
