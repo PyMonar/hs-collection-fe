@@ -20,6 +20,11 @@
     <main id="content">
       <router-view />
     </main>
+    <footer id="footer">
+      <span>{{curYear}}</span>
+      <span>@</span>
+      <span>Monar</span>
+    </footer>
   </div>
 </template>
 
@@ -30,7 +35,8 @@ export default {
   name: 'App',
   data () {
     return {
-      selectedMenu: 1
+      selectedMenu: 1,
+      curYear: 0
     }
   },
   methods: {
@@ -40,6 +46,10 @@ export default {
         path: route
       })
     }
+  },
+  created () {
+    let now = new Date()
+    this.curYear = now.getFullYear()
   }
 }
 </script>
@@ -49,6 +59,7 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #b7bac0;
+  font-family: 'Nowayround';
 }
 
 #nav {
@@ -62,7 +73,6 @@ export default {
 #header {
   float: left;
   font-size: 30px;
-  font-family: 'Nowayround';
   line-height: 80px;
   padding: 0 20px;
   color: #E6A23C;
@@ -102,5 +112,17 @@ ul#menu li span.selected {
 
 #content {
   padding: 20px 100px 0 100px;
+  min-height: 300px;
+}
+
+#footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  color: #E6A23C;
+  box-shadow: 0px -1px 3px rgba(26,26,26,.1);
 }
 </style>
