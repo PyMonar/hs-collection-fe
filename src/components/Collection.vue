@@ -47,6 +47,7 @@ export default {
 
 #cards-panel {
   margin-top: 20px;
+  font-family: 'benmo';
 }
 
 #search-panel {

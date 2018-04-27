@@ -59,7 +59,7 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #b7bac0;
-  font-family: 'Nowayround';
+  font-family: 'benmo';
 }
 
 #nav {

@@ -16,6 +16,12 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'benmo';
+  src: url('../fonts/benmo.ttf');
+  font-style: normal;
+}
+
 ::selection {
   background: #48d436;
   color: #ffffff;
