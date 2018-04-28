@@ -1,8 +1,8 @@
 <template>
   <div id="collection">
-    <div id="search-panel">
+    <!-- <div id="search-panel">
       Search Bar
-    </div>
+    </div> -->
     <div id="cards-panel">
       <div class="cards-set">
         <div class="set-year">
@@ -14,7 +14,58 @@
           <span class="en-expansion">Delve Into The Witchwood</span>
         </div>
         <div class="set-main">
-          <!-- tab? -->
+          <el-tabs v-model="activeClass" @tab-click="changeClass">
+            <el-tab-pane name="zs">
+              <span slot="label" class="zs-color">
+                战士
+              </span>
+            </el-tab-pane>
+            <el-tab-pane name="lr">
+              <span slot="label" class="lr-color">
+                猎人
+              </span>
+            </el-tab-pane>
+            <el-tab-pane name="sm">
+              <span slot="label" class="sm-color">
+                萨满
+              </span>
+            </el-tab-pane>
+            <el-tab-pane name="dz">
+              <span slot="label" class="dz-color">
+                盗贼
+              </span>
+            </el-tab-pane>
+            <el-tab-pane name="fs">
+              <span slot="label" class="fs-color">
+                法师
+              </span>
+            </el-tab-pane>
+            <el-tab-pane name="xd">
+              <span slot="label" class="xd-color">
+                德鲁伊
+              </span>
+            </el-tab-pane>
+            <el-tab-pane name="qs">
+              <span slot="label" class="qs-color">
+                骑士
+              </span>
+            </el-tab-pane>
+            <el-tab-pane name="ms">
+              <span slot="label" class="ms-color">
+                牧师
+              </span>
+            </el-tab-pane>
+            <el-tab-pane name="ss">
+              <span slot="label" class="ss-color">
+                术士
+              </span>
+            </el-tab-pane>
+            <el-tab-pane name="zl">
+              <span slot="label" class="zl-color">
+                中立
+              </span>
+            </el-tab-pane>
+          </el-tabs>
         </div>
       </div>
     </div>
@@ -26,12 +77,15 @@ export default {
   name: 'Collection',
   data () {
     return {
-
+      activeClass: 'dz'
     }
   },
   methods: {
     load () {
       console.log('load cards')
+    },
+    changeClass () {
+
     }
   },
   created () {
@@ -48,6 +102,37 @@ export default {
 #cards-panel {
   margin-top: 20px;
   font-family: 'benmo';
+
+  .set-year {
+    padding-top: 10px;
+    margin-bottom: 10px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 25px;
+    color: #48d436;
+    border-bottom: 1px solid;
+
+    .en-year {
+      font-size: 15px;
+    }
+  }
+
+  .set-expansion {
+    padding: 10px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 18px;
+    color: mediumpurple;
+
+    .en-expansion {
+      font-size: 10px;
+    }
+  }
+
+  .set-main {
+    color: #b7bac0;
+    padding-left: 10px;
+  }
 }
 
 #search-panel {
